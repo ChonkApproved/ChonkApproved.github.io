@@ -56,12 +56,6 @@ alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
 og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -149,7 +143,7 @@ collections:
   buy:
     output: true
     permalink: /:collection/:path/
-  about:
+  about_us:
     output: true
     permalink: /:collection/:path/
   contact:
@@ -160,25 +154,8 @@ collections:
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _teaching
+
+  # _Buy
   - scope:
       path: ""
       type: buy
@@ -187,25 +164,16 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _About_Us
   - scope:
       path: ""
-      type: about
+      type: about us
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
+  # _Contact
   - scope:
       path: ""
       type: contact
@@ -213,6 +181,8 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      comment: true
+
 
 # Sass/SCSS
 sass:
